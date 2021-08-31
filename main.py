@@ -23,6 +23,9 @@ md5_file.close()
 # Define stop time.
 stop = timeit.default_timer()
 
+# Calculate run time and output as milliseconds
+run_time = (stop-start)*1000
+
 # Print results and runtime.
 print(f"Hashing {len(md5_list)} words into MD5 and save file to '5000md5.txt'")
-print("Run Time:", stop-start)
+print("Run Time:", run_time ," ms")
